@@ -1,0 +1,23 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 100,
+            "driver": "SQLite",
+            "name": "inventory",
+            "database": "${workspaceFolder:code}/ch02/inventory.db"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Inventory",
+            "database": "${workspaceFolder:code}/ch02/inventory.db"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "inventory_ch03",
+            "database": "${workspaceFolder:code}/ch03/inventory.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
