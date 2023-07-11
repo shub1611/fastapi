@@ -1,5 +1,10 @@
+{% extends 'home.html' %}
+{% block content %}
+
 <form action="/todo-save" method="post">
     Item Name
     <input type="text" name="item">
     <input type="submit" value="Go">
 </form>
+
+{% endblock %}
