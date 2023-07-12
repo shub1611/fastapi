@@ -6,8 +6,8 @@ from routes.events import event_router
 from database.connection import conn
 
 app = FastAPI(
-    title= "Traincote Api : CH05",
-    description= "This is Learning API for chapter 5"
+    title= "Traincote Api : CH06",
+    description= "FastAPI SQLModel learning in chapter 6"
 )
 
 
@@ -20,9 +20,9 @@ def on_startup():
     conn()
 
 # 
-# @app.get("/")
-# async def home():
-#     return RedirectResponse(url='/event')
+@app.get("/")
+async def home():
+    return RedirectResponse(url='/event')
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=8080, reload=True)
