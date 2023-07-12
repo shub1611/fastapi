@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "main:app",
+                "ch06-mongodb.main:app",
                 "--reload"
             ],
             "jinja": true,
