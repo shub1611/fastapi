@@ -52,7 +52,7 @@ async def delete_single_event(id: str, ) -> dict:
     }
 
 @event_router.put('/update/{id}')
-async def update_event(id: PydanticObjectId, new_event: EventUpdate) -> Event:
+async def update_event(id: str, new_event: EventUpdate) -> Event:
     event = await event_database.update(id, new_event)
     if not event:
         raise HTTPException(
