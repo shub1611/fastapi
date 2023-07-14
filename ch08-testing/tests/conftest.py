@@ -24,5 +24,5 @@ async def default_client():
     async with httpx.AsyncClient(app=app, base_url="http://app") as client:
         yield client
         # Clean up resources
-        # await Event.find_all().delete()
-        # await User.find_all().delete()
+        await Event.find_all().delete()
+        await User.find_all().delete()
